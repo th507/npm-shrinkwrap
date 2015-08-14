@@ -30,6 +30,8 @@ function main(opts, callback) {
         !!opts['use-global-npm'] : 'useGlobalNPM' in opts ?
         !!opts.useGlobalNPM : false;
 
+    opts.useGlobalNPM = true;
+
     opts.dirname = opts.dirname ?
         path.resolve(opts.dirname) : process.cwd();
 
